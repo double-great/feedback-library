@@ -1,0 +1,23 @@
+{
+  "name": "feedback-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-content": "extra-eyes _posts/ --dict=library.dic",
+    "test": "npm run test-content"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "extra-eyes": "^1.2.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

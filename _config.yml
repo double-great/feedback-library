@@ -1,0 +1,32 @@
+title: Feedback library
+description: >- # this means to ignore newlines until "baseurl:"
+  A library of documentation and product feedback user interfaces and workflows.
+baseurl: "/feedback-library" # the subpath of your site, e.g. /blog
+url: "https://katydecorah.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+github: katydecorah/feedback-library
+
+author:
+  name: Katy DeCorah
+
+header_pages:
+  - documentation.md
+  - product.md
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+
+exclude:
+  - package.json
+  - package-lock.json
