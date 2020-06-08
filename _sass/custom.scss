@@ -2,6 +2,10 @@
   letter-spacing: 0 !important;
 }
 
+a {
+  color: #2371d8; // a11y color contrast
+}
+
 .layout-home.wrapper {
   max-width: -webkit-calc(1100px - (30px * 2));
   max-width: calc(1100px - (30px * 2));
