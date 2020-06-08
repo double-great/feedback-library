@@ -2,6 +2,11 @@
   letter-spacing: 0 !important;
 }
 
+.layout-home.wrapper {
+  max-width: -webkit-calc(1100px - (30px * 2));
+  max-width: calc(1100px - (30px * 2));
+}
+
 .post-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

@@ -1,6 +1,6 @@
 <footer class="site-footer h-card">
   <div class="wrapper">
-    <div class="footer-col-wrapper">
+    <div>
       <p>{{ site.description | escape }}</p>
     </div>
 
@@ -25,9 +25,8 @@
             ><svg class="svg-icon grey">
               <use
                 xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"
-              ></use>
-            </svg>
-            Contribute on GitHub</a
+              ></use></svg
+            ><span>Contribute on GitHub</span></a
           >
         </li>
         {%- endif -%}
