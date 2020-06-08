@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test-content": "extra-eyes _posts/ --dict=library.dic",
-    "test": "npm run test-content"
+    "lint-md": "remark _posts",
+    "test": "npm run test-content && npm run lint-md"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@double-great/remark-lint-alt-text": "^0.2.1",
     "extra-eyes": "^1.2.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "remark-cli": "^8.0.0"
   },
   "husky": {
     "hooks": {
