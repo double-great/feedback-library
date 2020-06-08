@@ -2,16 +2,12 @@ title: Feedback library
 description: >- # this means to ignore newlines until "baseurl:"
   A library of documentation and product feedback user interfaces and workflows.
 baseurl: "/feedback-library" # the subpath of your site, e.g. /blog
-url: "https://katydecorah.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://doublegreat.dev" # the base hostname & protocol for your site, e.g. http://example.com
 
-github: katydecorah/feedback-library
+github: double-great/feedback-library
 
 author:
   name: Katy DeCorah
-
-header_pages:
-  - documentation.md
-  - product.md
 
 # Build settings
 theme: minima
