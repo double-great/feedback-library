@@ -1,3 +1,23 @@
 {
-  "plugins": ["@double-great/remark-lint-alt-text"]
+  "plugins": [
+    [
+      "@double-great/remark-lint-alt-text"
+    ],
+    [
+      "remark-frontmatter",
+      [
+        "yaml"
+      ]
+    ],
+    [
+      "./lint/frontmatter",
+      [
+        2,
+        {
+          "imgDir": "/img/",
+          "categories": ["documentation", "product"]
+       }
+      ]
+    ]
+  ]
 }
