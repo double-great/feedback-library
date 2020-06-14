@@ -9,30 +9,27 @@ const fs = require("fs");
 function yaml(ast, file, options) {
   visit(ast, "yaml", visitor);
   function visitor(node) {
+    const hasField = (label, field) => {
+      if (!field) file.message(`Missing \`${label}\` in frontmatter`);
+    };
+
     if (!generated(node)) {
       try {
         // yaml is valid
         jsyaml.safeLoad(node.value);
-        const title = jsyaml.safeLoad(node.value).title;
-        const image = jsyaml.safeLoad(node.value).image;
-        const categories = jsyaml.safeLoad(node.value).categories;
+        const { title, image, categories } = jsyaml.safeLoad(node.value);
         // has title
-        if (!title) {
-          file.message("missing `title` in frontmatter", node);
-        }
+        hasField("title", title);
         // has image
-        if (!image) {
-          file.message("missing `image` in frontmatter", node);
-        }
+        hasField("image", image);
+        // has categories
+        hasField("categories", categories);
+
         if (image) {
           const imagePath = `./${image}`;
           if (!fs.existsSync(imagePath)) {
             file.message(`cannot find \`image\` at "${imagePath}"`, node);
           }
-        }
-        // has categories
-        if (!categories) {
-          file.message("missing `categories` in frontmatter", node);
         }
         if (categories && typeof categories !== "object") {
           file.message("`categories` must be formatted as an array", node);
