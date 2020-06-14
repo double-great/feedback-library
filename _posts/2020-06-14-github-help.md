@@ -9,6 +9,6 @@ On [GitHub Help](https://help.github.com/), you can find a **Were you able to fi
 
 ![](/feedback-library/img/2020-06-14-github-1.png)
 
-When you select any option or submit comments, a confirmation appears:
+When you select any option or submit a comment, a confirmation appears:
 
 ![Thank you! Your feedback has been submitted.](/feedback-library/img/2020-06-14-github-2.png)
