@@ -3,7 +3,7 @@ title: Slack tutorials
 categories:
   - product
   - documentation
-image: 2020-06-06-slack-tutorials-thumb.png
+image: img/2020-06-06-slack-tutorials-thumb.png
 position: top center
 ---
 

@@ -25,7 +25,7 @@ function yaml(ast, file, options) {
           file.message("missing `image` in frontmatter", node);
         }
         if (image) {
-          const imagePath = `.${options.imgDir || null}${image}`;
+          const imagePath = `./${image}`;
           if (!fs.existsSync(imagePath)) {
             file.message(`cannot find \`image\` at "${imagePath}"`, node);
           }
