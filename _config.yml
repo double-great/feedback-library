@@ -28,3 +28,7 @@ defaults:
 exclude:
   - package.json
   - package-lock.json
+  - lint
+  - CONTRIBUTING.md
+  - README.md
+  - library.dic
