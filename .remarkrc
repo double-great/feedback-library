@@ -10,12 +10,27 @@
       ]
     ],
     [
-      "./lint/frontmatter",
+      "remark-frontmatter-validator",
       [
         2,
         {
-          "categories": ["documentation", "product"]
-       }
+          "required": {
+            "title": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string",
+              "match": "^img/\\d\\d\\d\\d-\\d\\d-\\d\\d-.*.(png|jpg)$"
+            },
+            "categories": {
+              "type": "object",
+              "oneOf": [
+                "documentation",
+                "product"
+              ]
+            }
+          }
+        }
       ]
     ]
   ]
