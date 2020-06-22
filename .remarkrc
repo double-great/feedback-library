@@ -14,21 +14,22 @@
       [
         2,
         {
-          "required": {
-            "title": {
-              "type": "string"
-            },
-            "image": {
-              "type": "string",
-              "match": "^img/\\d\\d\\d\\d-\\d\\d-\\d\\d-.*.(png|jpg)$"
-            },
-            "categories": {
-              "type": "object",
-              "oneOf": [
-                "documentation",
-                "product"
-              ]
-            }
+          "title": {
+            "type": "string",
+            "required": true
+          },
+          "image": {
+            "type": "string",
+            "match": "^img/\\d\\d\\d\\d-\\d\\d-\\d\\d-.*.(png|jpg)$",
+            "required": true
+          },
+          "categories": {
+            "type": "object",
+            "oneOf": [
+              "documentation",
+              "product"
+            ],
+            "required": true
           }
         }
       ]
