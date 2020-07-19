@@ -1,21 +1,3 @@
-.site-title {
-  letter-spacing: 0 !important;
-}
-
-.post-meta {
-  color: #757575; // a11y color contrast
-  font-size: 1em;
-}
-
-a {
-  color: #2371d8; // a11y color contrast
-}
-
-.layout-home.wrapper {
-  max-width: -webkit-calc(1100px - (30px * 2));
-  max-width: calc(1100px - (30px * 2));
-}
-
 .post-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -49,4 +31,5 @@ a {
   border-radius: 4px;
   margin: 15px 0;
   border: 1px solid rgba(221, 221, 221, 1);
+  max-width: 100%;
 }
