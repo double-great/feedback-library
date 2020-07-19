@@ -1,35 +1,5 @@
-.post-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 15px;
-}
-
-.post-card {
-  border-radius: 4px;
-  display: block;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-  border: 1px solid rgba(221, 221, 221, 0.45);
-}
-
-.post-card-image {
-  border-radius: 4px 4px 0 0;
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom center;
-  margin: 0;
-  display: block;
-  border-bottom: 1px solid rgba(221, 221, 221, 0.45);
-}
-
-.post-card-title {
-  padding: 12px 15px;
-}
-
 .post img {
-  border-radius: 4px;
-  margin: 15px 0;
-  border: 1px solid rgba(221, 221, 221, 1);
-  max-width: 100%;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+  border: $border-thin solid $color-border;
 }
