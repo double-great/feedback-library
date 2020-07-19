@@ -4,7 +4,7 @@ categories:
   - product
   - documentation
 image: img/2020-06-06-slack-tutorials-thumb.png
-position: top center
+image_position: top center
 ---
 
 At the bottom of [Slack tutorials](https://api.slack.com/tutorials/), there's a section that asks you **Was this page helpful?** and accompanying `Yes` and `No` buttons:

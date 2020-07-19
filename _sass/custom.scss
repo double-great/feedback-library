@@ -3,3 +3,7 @@
   margin: 1rem 0;
   border: $border-thin solid $color-border;
 }
+
+.page-home .page-content .wrapper {
+  max-width: $mq-medium !important;
+}
