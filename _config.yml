@@ -10,9 +10,13 @@ author:
   name: Katy DeCorah
 
 # Build settings
-theme: minima
+remote_theme: double-great/great-great-jekyll-theme@main
+logo: <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo
+  - jekyll-remote-theme
 
 google_analytics: UA-168677568-1
 
@@ -20,8 +24,8 @@ permalink: /:year/:month/:day/:title/
 
 defaults:
   - scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
+      path: ""
+      type: "posts"
     values:
       layout: "post"
 
@@ -32,3 +36,4 @@ exclude:
   - CONTRIBUTING.md
   - README.md
   - library.dic
+  - node_modules

@@ -3,6 +3,7 @@ title: GitHub Help
 categories:
   - documentation
 image: img/2020-06-14-github-thumb.png
+image_position: left center
 ---
 
 On [GitHub Help](https://help.github.com/), you can find a **Were you able to find what you were looking for?** feature stuck to the right side of the page with the options `Yes, easily`, `Yes, eventually`, and `No`. You can also send optional comments.
