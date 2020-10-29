@@ -17,7 +17,7 @@ module.exports.plugins = [
         },
         categories: {
           type: "array",
-          oneOf: ["documentation", "product"],
+          oneOf: ["documentation", "product", "support"],
           required: true,
         },
       },
