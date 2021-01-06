@@ -14,7 +14,7 @@ remote_theme: double-great/great-great-jekyll-theme@main
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo
+  - jekyll-seo-tag
   - jekyll-remote-theme
 
 google_analytics: UA-168677568-1
