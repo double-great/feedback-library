@@ -36,3 +36,4 @@ exclude:
   - README.md
   - library.dic
   - node_modules
+  - vendor
