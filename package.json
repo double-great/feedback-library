@@ -6,7 +6,7 @@
   "scripts": {
     "test-content": "extra-eyes _posts/ --dict=library.dic",
     "lint-md": "remark _posts",
-    "test": "npm run test-content && npm run lint-md",
+    "test": "bundle exec jekyll build && npm run test-content && npm run lint-md",
     "pretty-quick": "pretty-quick"
   },
   "author": "",
