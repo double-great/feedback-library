@@ -1,5 +1,6 @@
 module.exports.plugins = [
   ["@double-great/remark-lint-alt-text"],
+  ["@double-great/remark-lint-link-text"],
   ["remark-frontmatter", ["yaml"]],
   [
     "remark-frontmatter-validator",
