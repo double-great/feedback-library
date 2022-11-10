@@ -15,7 +15,7 @@
     "@double-great/remark-lint-alt-text": "^1.0.0",
     "@double-great/remark-lint-link-text": "^0.8.0",
     "extra-eyes": "^3.2.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "js-yaml": "^4.1.0",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
