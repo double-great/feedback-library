@@ -10,7 +10,7 @@ author:
   name: Katy DeCorah
 
 # Build settings
-remote_theme: double-great/theme@v2.0.0
+remote_theme: double-great/theme@main
 plugins:
   - jekyll-feed
   - jekyll-sitemap
