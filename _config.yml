@@ -21,6 +21,9 @@ google_analytics: UA-168677568-1
 
 permalink: /:year/:month/:day/:title/
 
+sass:
+  style: compressed
+
 defaults:
   - scope:
       path: ""
